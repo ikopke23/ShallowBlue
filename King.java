@@ -90,11 +90,11 @@ class King extends Piece{
               moves[moveC][3] = this.num+n;
               moveC++;
               // }else if((this.board.pieceAtPos(this.let+i, this.num+n).getSide() != this.side) && (this.board.pieceisPro(this.let+1, this.num+n)){
-              }else if(this.board.pieceAtPos(this.let+i, this.num+n).getSide() == this.side){
+            } else if(this.board.pieceAtPos(this.let+i, this.num+n).getSide() == this.side){
               protecs[proC][0] = this.let+i;
               protecs[proC][1] = this.num+n;
               proC++;
-            } else if(this.board.pieceisPro(this.let+i, this.num+n, this.side)){
+            } else if(!this.board.pieceisPro(this.let+i, this.num+n, this.side)){
               moves[moveC][2] = this.let+i;
               moves[moveC][3] = this.num+n;
               moveC++;
