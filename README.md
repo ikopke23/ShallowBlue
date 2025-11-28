@@ -10,6 +10,6 @@ That should automatically compile each imported file which will spawn a bunch of
 
 
 ## Issues
- - Bottom right diagonal is not checking if pieces are in interposing check
+ - Bottom right diagonal is not checking if pieces are interposing check
  - No way to reset board
  - En can move into check, or can move a piece that is being pinned
